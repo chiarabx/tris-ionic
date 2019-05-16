@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()"
+        ><ion-icon name="arrow-back"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+    <ion-title>Score Counter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="countercontainer" padding>
+    <ion-row>
+      <ion-col
+        size="6"
+        class="label ion-text-center"
+        *ngFor="let el of counter"
+        >{{ el.label }}</ion-col
+      >
+    </ion-row>
+    <ion-row text-align="center">
+      <ion-col
+        size="6"
+        class="name ion-text-center"
+        *ngFor="let el of counter"
+        >{{ el.name | uppercase }}</ion-col
+      >
+    </ion-row>
+    <ion-row>
+      <ion-col
+        size="6"
+        class=" points ion-text-center"
+        *ngFor="let el of counter"
+        >{{ el.points }}</ion-col
+      >
+    </ion-row>
+  </div>
+</ion-content>

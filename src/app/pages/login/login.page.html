@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Player 1</ion-label>
+    <ion-input
+      [(ngModel)]="player1"
+      type="text"
+      placeholder="Enter Name"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Player 2</ion-label>
+    <ion-input
+      [(ngModel)]="player2"
+      type="text"
+      placeholder="Enter Name"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input
+      [(ngModel)]="password"
+      type="password"
+      placeholder="Enter Password"
+    ></ion-input>
+  </ion-item>
+  <ion-button (click)="login()">Login</ion-button>
+</ion-content>

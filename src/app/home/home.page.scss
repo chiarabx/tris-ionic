@@ -1,1 +1,89 @@
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backbutton {
+  width: 80px;
+  height: 20px;
+  font-size: 18px;
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  flex: 3;
+  justify-content: center;
+  text-align: center;
+  font-family: "Schoolbell", cursive;
+  color: rgb(18, 18, 78);
+  font-weight: 400;
+  font-size: 18px;
+}
+.right {
+  flex: 1;
+}
+.input-button {
+  margin: 5px;
+}
+.bigContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
 
+.trisContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 320px;
+}
+.header {
+  display: flex;
+  flex-basis: 3;
+}
+
+.trisCell {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(193, 244, 248);
+  border: 2px solid white;
+  font-size: 65px;
+  text-align: center;
+}
+
+.victory-announcement {
+  background-color: rgb(193, 244, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 320px;
+  font-size: 30px;
+  color: rgb(18, 18, 78);
+}
+
+.big-button {
+  background-color: rgb(33, 70, 146);
+  color: white;
+  border-radius: 5px;
+  width: 190px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+button:hover {
+  background-color: rgb(74, 121, 216);
+}
